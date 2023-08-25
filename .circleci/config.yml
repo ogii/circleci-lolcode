@@ -6,7 +6,8 @@ jobs:
       - image: esolang/lolcode:latest
     steps:
       - checkout
-      - run: echo "test"
+      - run: cat hello.lolcode
+      - run: lolcode hello.lolcode
 
 workflows:
   workflow1:
